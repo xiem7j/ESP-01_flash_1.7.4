@@ -93,14 +93,14 @@ Download the following files:
 4. esp_init_data_default_v08.bin
 
 Alternatively, download a zip file containing the four files from here:
-[./downloads/v1.7.4.zip](../wifi_shield/downloads/v1.7.4.zip)
+[./downloads/v1.7.4.zip](downloads/v1.7.4.zip)
 
 Download the Espressif flash tool from
 <https://docs.espressif.com/projects/esp-test-tools/en/latest/esp32/production_stage/tools/flash_download_tool.html>.
 Click on the 'Flash Download Tool' link under 'Software' to get it.
 
 Alternatively, get a local copy from here:
-[./downloads/flash_tool.zip](../wifi_shield/downloads/v1.7.4.zip)
+[./downloads/flash_tool.zip](downloads/v1.7.4.zip)
 
 Run the flash tool and confirm that it can communicate with the ESP-01.  
 ![Screenshot of Flash Tool](images/flash_tool_chip_info.png)
