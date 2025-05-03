@@ -81,7 +81,7 @@ To upgrade to firmare 1.7.4, do the following:
 
 ## Get the firmware:
 Go to the
-[Espressif GitHub page for ESP8266 firmware](https://github.com/espressif/ESP8266_NONOS_SDK "Espressif GitHub")  
+[Espressif GitHub page for ESP8266 firmware](https://github.com/espressif/ESP8266_NONOS_SDK "Espressif GitHub").
 Select the 3.0.4 firmware branch by clicking on the 'master' dropdown, clicking on the 'Tags' menu, and selecting v3.0.4.
 
 ![ESP8266 NONOS SDK 3.0.4 selection](images/github_tag_v3.0.4.png)
@@ -104,6 +104,7 @@ Alternatively, get a local copy from here:
 
 Run the flash tool and confirm that it can communicate with the ESP-01.  
 ![Screenshot of Flash Tool](images/flash_tool_chip_info.png)
+
 Select the 'chipInfoDump' tab, select the device port, and click on the 'Chip Info' button.
 If the communication is successful, the detection information will appear in the log window.
 
