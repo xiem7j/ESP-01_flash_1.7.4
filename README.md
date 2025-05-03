@@ -42,6 +42,13 @@ See wiring diagram and photo.
 ![alt text](https://github.com/xiem7j/ESP-01_flash_1.7.4/blob/main/direct_connection_photo.jpg?raw=true)
 ![test 3](https://camo.githubusercontent.com/c6e240909a082b445706f9bcc9648ffbeb917fa3624e56960bc370f8c6e10e05/687474703a2f2f692e696d6775722e636f6d2f7a544f4e724f442e6a7067)
 
+
+
+
+![Alt text](./images/direct_connection_photo.jpg?raw=true "Title")
+
+
+
 ![Photo of ESP-01 configuration for firmware check](/images/direct_connection_photo.jpg?raw=true)
 ![Fritzing illustration of ESP-01 configuration for firmware check](images/flash_esp_bb.png)
 ![Fritzing schematic of ESP-01 configuration for firmware check](images/flash_esp_schem.png)
