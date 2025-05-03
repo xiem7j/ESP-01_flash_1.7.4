@@ -39,7 +39,7 @@ This comes from a reply to a facebook post in 2016 from Teo Swee Ann, the CEO of
 https://www.facebook.com/groups/1499045113679103/permalink/1731855033731442/
 
 See wiring diagram and photo.
-![Photo of ESP-01 configuration for firmware check](/images/direct_connection_photo.jpg)
+![Photo of ESP-01 configuration for firmware check](/images/direct_connection_photo.jpg?raw=true)
 ![Fritzing illustration of ESP-01 configuration for firmware check](images/flash_esp_bb.png)
 ![Fritzing schematic of ESP-01 configuration for firmware check](images/flash_esp_schem.png)
 
