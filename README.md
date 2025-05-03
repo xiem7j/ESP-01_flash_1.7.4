@@ -39,9 +39,11 @@ This comes from a reply to a facebook post in 2016 from Teo Swee Ann, the CEO of
 https://www.facebook.com/groups/1499045113679103/permalink/1731855033731442/
 
 See wiring diagram and photo.
-![alt text](https://github.com/xiem7j/ESP-01_flash_1.7.4/blob/main/direct_connection_photo.jpg?raw=true)
+![alt text](https://github.com/xiem7j/ESP-01_flash_1.7.4/blob/main/images/direct_connection_photo.jpg?raw=true)
 ![test 3](https://camo.githubusercontent.com/c6e240909a082b445706f9bcc9648ffbeb917fa3624e56960bc370f8c6e10e05/687474703a2f2f692e696d6775722e636f6d2f7a544f4e724f442e6a7067)
 
+
+![test 5](raw.githubusercontent.com/xiem7j/ESP-01_flash_1.7.4/main/images/direct_connection_photo.jpg)
 
 
 
