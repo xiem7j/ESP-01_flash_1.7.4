@@ -7,15 +7,14 @@ The ESP-01 has a serial port (TX/RX pins) that can be used to communicate with t
 The UNO has a single hardware serial port (the pins labelled TX/RX) that is shared with the USB port.  If the serial monitor is used in the Arduino IDE to read messages from the UNO, the hardware port can't be used to communicate with other devices.
 
 Instead, the SoftwareSerial library can be used to communicate with the ESP-01. Any 2 GPIO pins on the UNO can be used as TX and RX lines.
-Speed limit - ss is 57600.
 
-The ESP-01 takes commands to connect to WiFi networks and transmit and receive data using AT commands sent over the serial port.  AT commands are short plain-text instructions that start with the string, AT.
+The ESP-01 takes instructions to connect to WiFi networks and transmit and receive data using AT commands sent over the serial port.  AT commands are short plain-text instructions that start with the string, AT.
 AT commands to control the ESP-01 can be written directly to it on the serial port, but that requires knowledge of the command set and low level network communications.  It is much easier to use a pre-built library to do the work.
 Two of those libraries are WiFiEsp and WiFiEspAT.
-WiFiEspAT is the more modern and Arduino-like.
+WiFiEspAT is the more modern library.
 It requires version 1.7.4 or greater of the Espressif firmware.
 
-The first task was to identify the firmware version running on my ESP-01.
+The first task was to identify the firmware version running on the ESP-01.
 An Arduino UNO was used to communicate with the ESP-01.
 The connections were are follows:
 
@@ -38,11 +37,20 @@ It is not tolerant on the power pins.
 This comes from a reply to a facebook post in 2016 from Teo Swee Ann, the CEO of Espressif, the maker of the ESP8266.
 https://www.facebook.com/groups/1499045113679103/permalink/1731855033731442/
 
-See wiring diagram and photo.
+See the photo and wiring diagrams below for the firmware version check layout.
 
+
+| | | |
+|:----:|:----:|:----:|
+|![Photo of ESP-01 configuration for firmware check](images/direct_connection_photo.jpg)| ![Frit
+zing illustration of ESP-01 configuration for firmware check](images/flash_esp_bb.png) |![Fritzi
+ng schematic of ESP-01 configuration for firmware check](images/flash_esp_schem.png)|
+
+<!--
 ![Photo of ESP-01 configuration for firmware check](images/direct_connection_photo.jpg)
 ![Fritzing illustration of ESP-01 configuration for firmware check](images/flash_esp_bb.png)
 ![Fritzing schematic of ESP-01 configuration for firmware check](images/flash_esp_schem.png)
+-->
 
 The Arduino IDE was used to query the ESP-01:
 Connect the UNO into a USB port on a PC.
@@ -151,3 +159,20 @@ An example of the output is shown below.
 21:18:44.132 -> Bin version(Wroom 02):1.7.4
 ```
 
+
+Speed limit - ss is 57600.
+
+Now the wiring can be changed to allow the Arduino UNO to use the ESP-01.
+
+wiring table
+
+Test with WiFiEspAT example code.
+
+The documentation for WiFiEspAT at https://github.com/jandrassy/WiFiEspAT
+recommends using 9600 baud with SoftwareSerial.
+The ESP-01 baud rate can be changed with a sketch included in the WiFiEspAT library
+
+
+Change baud rate to 9600
+
+Test with my code
