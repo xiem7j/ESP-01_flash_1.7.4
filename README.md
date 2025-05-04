@@ -1,6 +1,6 @@
 # Using an ESP-01 for WiFi on an Arduino UNO
 
-The ESP-01, or ESP8266-01, is a minimalist ESP8266 device with just enough I/Os to use a a WiFi "shield" for an Arduino UNO.
+The ESP-01, or ESP8266-01, is a minimalist ESP8266 device with just enough I/Os to use a a WiFi "shield" for an Arduino UNO.  The ESP8266 is made by Espressif Systems.
 It's not a shield in the traditional UNO sense as it doesn't stack nicely on top an UNO like other shields, and it's a 3.3V device, not a 5V device like most other devices in the UNO ecosystem.
 
 The ESP-01 has a serial port (TX/RX pins) that can be used to communicate with the Arduino UNO.
@@ -34,8 +34,8 @@ This prevents the CPU on the UNO from starting and allows the UNO to be used as 
 The TX pin on the Arduino will send pulses to the ESP-01 at 5V.
 The ESP-01 is 5V tolerant on the GPIO pins.
 It is not tolerant on the power pins.
-This comes from a reply to a facebook post in 2016 from Teo Swee Ann, the CEO of Espressif, the maker of the ESP8266.
-https://www.facebook.com/groups/1499045113679103/permalink/1731855033731442/
+This comes from a reply to a facebook post in 2016 from Teo Swee Ann, the CEO of Espressif:
+https://www.facebook.com/groups/1499045113679103/permalink/1731855033731442/.
 
 See the photo and wiring diagrams below for the firmware version check layout.
 
