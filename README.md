@@ -42,7 +42,7 @@ See the photo and wiring diagrams below for the firmware version check layout.
 
 | | | |
 |:----:|:----:|:----:|
-|![Photo of ESP-01 configuration for firmware check](images/direct_connection_photo.jpg)){:height="36px" width="36px"}| ![Fritzing illustration of ESP-01 configuration for firmware check](images/flash_esp_bb.png) |![Fritzing schematic of ESP-01 configuration for firmware check](images/flash_esp_schem.png)|
+|![Photo of ESP-01 configuration for firmware check](images/direct_connection_photo.jpg){:height="36px" width="36px"}| ![Fritzing illustration of ESP-01 configuration for firmware check](images/flash_esp_bb.png) |![Fritzing schematic of ESP-01 configuration for firmware check](images/flash_esp_schem.png)|
 
 <!--
 ![Photo of ESP-01 configuration for firmware check](images/direct_connection_photo.jpg)
