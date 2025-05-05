@@ -34,7 +34,7 @@ This prevents the CPU on the UNO from starting and allows the UNO to be used as 
 The TX pin on the Arduino will send pulses to the ESP-01 at 5V.
 The ESP-01 is 5V tolerant on the GPIO pins.
 It is not tolerant on the power pins.
-This comes from a reply to a facebook post in 2016 from Teo Swee Ann, the CEO of Espressif:
+This comes from a reply to a facebook post in 2016 from the CEO of Espressif:
 https://www.facebook.com/groups/1499045113679103/permalink/1731855033731442/.
 
 See the photo and wiring diagrams below for the firmware version check layout.
@@ -142,7 +142,9 @@ The upgrade can be tested with the Arduino IDE.
 Close the flash tool.
 Unplug the Arduino from the PC.  Disconnect the cable from GPIO0 on the ESP-01 to GND.
 Plug the Arduino back in.
-Run the Arduino IDE and open the serial monitor.  Check the firmware version with AT commands.
+Run the Arduino IDE and open the serial monitor.
+Set the line ending to "Both NL & CR".  Set the baud rate to 115200.
+Check the firmware version with AT commands.
 An example of the output is shown below.
 
 ```
@@ -164,6 +166,8 @@ Now the wiring can be changed to allow the Arduino UNO to use the ESP-01.
 wiring table
 
 Test with WiFiEspAT example code.
+Now talking to the ESP-01 via the UNO, so the the serial port speed to 115200
+and the line endings to Newline.
 
 The documentation for WiFiEspAT at https://github.com/jandrassy/WiFiEspAT
 recommends using 9600 baud with SoftwareSerial.
