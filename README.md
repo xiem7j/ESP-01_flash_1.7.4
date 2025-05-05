@@ -39,15 +39,9 @@ https://www.facebook.com/groups/1499045113679103/permalink/1731855033731442/.
 
 See the photo and wiring diagrams below for the firmware version check layout.
 
-<!--
 | | | |
 |:----:|:----:|:----:|
 |![Photo of ESP-01 configuration for firmware check](images/direct_connection_photo.jpg)| ![Fritzing illustration of ESP-01 configuration for firmware check](images/flash_esp_bb.png) |![Fritzing schematic of ESP-01 configuration for firmware check](images/flash_esp_schem.png)|
--->
-
-| | | |
-|:----:|:----:|:----:|
-|<img src="images/direct_connection_photo.jpg" alt="Photo" style="width:33%; height:auto;">| <img src="images/flash_esp_bb.png" alt="Illustration" style="width:33%; height:auto;">| <img src="images/flash_esp_schem.png" alt="Schematic" style="width:33%; height:auto;">|
 
 <!--
 ![Photo of ESP-01 configuration for firmware check](images/direct_connection_photo.jpg)
