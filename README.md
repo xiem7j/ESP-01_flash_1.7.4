@@ -204,6 +204,18 @@ This can be done with a sketch called 'ChangeATBaudRate' which is included in th
 
 ![Screenshot of ChangeATBaudRate in menus](images/change_baud_rate_example.png)
 
+Run the sketch to change the ESP-01 baud rate to 9600.
+
+Load and run the 'CheckFirmware' sketch from the same menu to confirm that the new
+firmware will work with the WiFiEspAT library.
+An example of the output on the Serial Monitor is shown below.
+
+```
+00:06:38.293 -> ⸮q⸮AT firmware version 1.7.4.0
+00:06:40.294 -> AT firmware is OK for the WiFiEspAT library.
+00:07:15.273 -> AT firmware version 1.7.4.0
+00:07:15.273 -> AT firmware is OK for the WiFiEspAT library.
+```
 
 
 Test with my code
