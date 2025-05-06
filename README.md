@@ -159,21 +159,51 @@ An example of the output is shown below.
 ```
 
 
-Speed limit - ss is 57600.
 
 Now the wiring can be changed to allow the Arduino UNO to use the ESP-01.
+Unplug the UNO.
+Move the TX cable on the UNO to pin 6.
+Move the RX cable on the UNO to pin 7.
+Disconnect the cable between RESET and GND on the UNO.
+Plug the UNO back in.
 
-wiring table
+| ESP-01 | Arduino UNO |
+|:------:|:-----------:|
+| 3V3    | 3V3         |
+| RX     | 7           |
+| RST    | NC          |
+| IO0    | NC          |
+| EN     | 3V3         |
+| IO2    | NC          |
+| TX     | 6           |
+| GND    | GND         |
 
-Test with WiFiEspAT example code.
-Now talking to the ESP-01 via the UNO, so the the serial port speed to 115200
+| Arduino UNO | Arduino UNO |
+|:-----------:|:-----------:|
+| RESET       | NC          |
+
+Open the Arduino IDE.
+Install the WiFiEspAT library.
+Tools -> Manage Libraries...
+Search for WiFiEspAT and install.
+
+![Screenshot of WiFiEspAT library install](images/wifiespat.png)
+
+Use the WiFiEspAT example sketches for testing.
+Open the serial monitor on the Arduino IDE, set the serial port speed to 115200 baud
 and the line endings to Newline.
 
-The documentation for WiFiEspAT at https://github.com/jandrassy/WiFiEspAT
+The SoftwareSerial library documentation
+(https://docs.arduino.cc/learn/built-in-libraries/software-serial/)
+says that the maximum speed for Arduino boards is 57600 baud.
+However, the documentation for WiFiEspAT at https://github.com/jandrassy/WiFiEspAT
 recommends using 9600 baud with SoftwareSerial.
-The ESP-01 baud rate can be changed with a sketch included in the WiFiEspAT library
+So, the first thing to do is change the baud rate on the ESP-01 from the default 115200
+to 9600.
+This can be done with a sketch called 'ChangeATBaudRate' which is included in the WiFiEspAT library examples:
+
+![Screenshot of ChangeATBaudRate in menus](images/change_baud_rate_example.png)
 
 
-Change baud rate to 9600
 
 Test with my code
